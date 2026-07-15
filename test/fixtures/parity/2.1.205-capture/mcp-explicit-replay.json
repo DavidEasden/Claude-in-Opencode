@@ -1,0 +1,25 @@
+{
+  "version": "2.1.205-capture",
+  "scenario": {
+    "name": "mcp-explicit-replay",
+    "description": "Bridge-generated explicit MCP replay scaffold; not a Claude Code golden capture."
+  },
+  "runtimeInput": {
+    "tools": [],
+    "bridgeOptions": {
+      "runtimeParity": {
+        "enabled": true,
+        "mcpTools": [
+          { "name": "mcp__replay__extra", "description": "Extra", "input_schema": { "type": "object" } }
+        ]
+      }
+    }
+  },
+  "expectedMcpTools": [
+    { "name": "mcp__replay__extra", "description": "Extra", "input_schema": { "type": "object" } }
+  ],
+  "expectedGapReasons": [],
+  "unsupported": [
+    "Phase 3D MCP fixture is bridge-generated and must be replaced by a sanitized Claude Code 2.1.205 golden capture before declaring external parity."
+  ]
+}

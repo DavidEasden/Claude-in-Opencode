@@ -1,0 +1,17 @@
+{
+  "model": "claude-opus-4-8",
+  "max_tokens": 32000,
+  "thinking": { "type": "adaptive", "display": "summarized" },
+  "output_config": { "effort": "max" },
+  "system": [{ "type": "text", "text": "You are OpenCode, the best coding agent on the planet." }],
+  "messages": [{ "role": "user", "content": [{ "type": "text", "text": "你是谁？" }] }],
+  "tools": [
+    {
+      "name": "bash",
+      "description": "Run shell",
+      "input_schema": { "type": "object" },
+      "eager_input_streaming": true
+    }
+  ],
+  "stream": true
+}

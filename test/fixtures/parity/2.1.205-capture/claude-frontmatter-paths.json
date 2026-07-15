@@ -1,0 +1,95 @@
+{
+  "version": "2.1.205-capture",
+  "scenario": {
+    "name": "claude-frontmatter-paths",
+    "description": "Bridge-generated Phase 3B frontmatter paths memory scaffold; not a Claude Code golden capture."
+  },
+  "runtimeInput": {
+    "messages": [
+      {
+        "role": "user",
+        "content": "Memory fixture probe."
+      }
+    ],
+    "bridgeOptions": {
+      "toolNames": [],
+      "systemPrompt": "Phase 3B memory fixture system.",
+      "userContextBlock": "Phase 3B memory fixture context.",
+      "runtimeParity": {
+        "enabled": true,
+        "diagnostics": true,
+        "activePaths": ["src/index.ts"]
+      }
+    }
+  },
+  "expected": {
+    "method": "POST",
+    "urlKind": "anthropic-messages",
+    "headers": {},
+    "body": {
+      "model": "claude-opus-4-8",
+      "max_tokens": 64000,
+      "thinking": {
+        "type": "adaptive"
+      },
+      "output_config": {
+        "effort": "high"
+      },
+      "context_management": {
+        "edits": [
+          {
+            "type": "clear_thinking_20251015",
+            "keep": "all"
+          }
+        ]
+      },
+      "system": [
+        {
+          "type": "text",
+          "text": "x-anthropic-billing-header: cc_version=2.1.205.bcd; cc_entrypoint=sdk-cli;"
+        },
+        {
+          "type": "text",
+          "text": "You are a Claude agent, built on Anthropic's Claude Agent SDK.",
+          "cache_control": {
+            "type": "ephemeral"
+          }
+        },
+        {
+          "type": "text",
+          "text": "Phase 3B memory fixture system.",
+          "cache_control": {
+            "type": "ephemeral"
+          }
+        }
+      ],
+      "messages": [
+        {
+          "role": "user",
+          "content": [
+            {
+              "type": "text",
+              "text": "Phase 3B memory fixture context."
+            },
+            {
+              "type": "text",
+              "text": "Memory fixture probe.",
+              "cache_control": {
+                "type": "ephemeral"
+              }
+            }
+          ]
+        }
+      ],
+      "tools": [],
+      "stream": true,
+      "metadata": {
+        "user_id": "{\"device_id\":\"e2cf0b71e2614bd09821c5006fab451f055280cabee95abea1707b940bb9476b\",\"account_uuid\":\"\",\"session_id\":\"61c08f89-e11f-477b-b43a-3cfe3214fe25\"}"
+      }
+    }
+  },
+  "redactions": [],
+  "unsupported": [
+    "Phase 3B memory fixture is bridge-generated and must be replaced by a sanitized Claude Code 2.1.205 golden capture before declaring external parity."
+  ]
+}

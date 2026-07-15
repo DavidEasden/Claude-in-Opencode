@@ -1,0 +1,25 @@
+{
+  "version": "2.1.205-capture",
+  "scenario": {
+    "name": "mcp-visible-tools",
+    "description": "Bridge-generated OpenCode live MCP tool scaffold; not a Claude Code golden capture."
+  },
+  "runtimeInput": {
+    "tools": [
+      {
+        "name": "mcp__demo__search",
+        "description": "Search",
+        "input_schema": { "type": "object" },
+        "eager_input_streaming": true
+      }
+    ],
+    "bridgeOptions": { "runtimeParity": { "enabled": true } }
+  },
+  "expectedMcpTools": [
+    { "name": "mcp__demo__search", "description": "Search", "input_schema": { "type": "object" } }
+  ],
+  "expectedGapReasons": [],
+  "unsupported": [
+    "Phase 3D MCP fixture is bridge-generated and must be replaced by a sanitized Claude Code 2.1.205 golden capture before declaring external parity."
+  ]
+}

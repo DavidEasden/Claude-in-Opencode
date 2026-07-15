@@ -1,0 +1,18 @@
+{
+  "version": "2.1.205-capture",
+  "scenario": {
+    "name": "mcp-external-execution-gap",
+    "description": "Bridge-generated MCP ownership gap scaffold; not a Claude Code golden capture."
+  },
+  "runtimeInput": {
+    "tools": [],
+    "bridgeOptions": { "runtimeParity": { "enabled": true, "executeMcpServers": true } }
+  },
+  "expectedMcpTools": [],
+  "expectedGapReasons": [
+    "MCP server lifecycle is owned by OpenCode; independent execution is unsupported"
+  ],
+  "unsupported": [
+    "Phase 3D MCP fixture is bridge-generated and must be replaced by a sanitized Claude Code 2.1.205 golden capture before declaring external parity."
+  ]
+}

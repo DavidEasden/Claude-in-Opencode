@@ -1,0 +1,19 @@
+{
+  "model": "claude-opus-4-8",
+  "messages": [
+    { "role": "user", "content": [] },
+    { "role": "system", "content": "Sanitized deferred tools fixture" }
+  ],
+  "system": [],
+  "tools": [],
+  "metadata": {
+    "user_id": "{\"device_id\":\"e2cf0b71e2614bd09821c5006fab451f055280cabee95abea1707b940bb9476b\",\"account_uuid\":\"\",\"session_id\":\"61c08f89-e11f-477b-b43a-3cfe3214fe25\"}"
+  },
+  "max_tokens": 64000,
+  "thinking": { "type": "adaptive" },
+  "context_management": {
+    "edits": [{ "type": "clear_thinking_20251015", "keep": "all" }]
+  },
+  "output_config": { "effort": "xhigh" },
+  "stream": true
+}

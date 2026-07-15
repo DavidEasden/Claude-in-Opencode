@@ -1,0 +1,40 @@
+{
+  "name": "claude-in-opencode",
+  "version": "0.1.0",
+  "description": "Claude in OpenCode plugin that rewrites Anthropic requests into Claude Code-like requests through an in-process fetch bridge",
+  "type": "module",
+  "license": "AGPL-3.0-only",
+  "exports": {
+    ".": "./dist/plugin.js"
+  },
+  "bin": {
+    "claude-in-opencode": "dist/cli.js"
+  },
+  "files": [
+    "dist",
+    "README.md"
+  ],
+  "scripts": {
+    "build": "tsup",
+    "test": "vitest run",
+    "typecheck": "tsc --noEmit"
+  },
+  "dependencies": {
+    "commander": "^12.1.0",
+    "jsonc-parser": "^3.3.1"
+  },
+  "devDependencies": {
+    "@types/node": "^22.10.2",
+    "tsup": "^8.3.5",
+    "typescript": "^5.7.2",
+    "vitest": "^2.1.8"
+  },
+  "peerDependencies": {
+    "@opencode-ai/plugin": "*"
+  },
+  "peerDependenciesMeta": {
+    "@opencode-ai/plugin": {
+      "optional": true
+    }
+  }
+}

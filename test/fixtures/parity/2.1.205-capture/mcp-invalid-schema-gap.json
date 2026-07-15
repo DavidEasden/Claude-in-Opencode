@@ -1,0 +1,18 @@
+{
+  "version": "2.1.205-capture",
+  "scenario": {
+    "name": "mcp-invalid-schema-gap",
+    "description": "Bridge-generated invalid MCP schema gap scaffold; not a Claude Code golden capture."
+  },
+  "runtimeInput": {
+    "tools": [
+      { "name": "mcp__demo__invalid", "description": "Invalid", "input_schema": { "type": "array" } }
+    ],
+    "bridgeOptions": { "runtimeParity": { "enabled": true } }
+  },
+  "expectedMcpTools": [],
+  "expectedGapReasons": ["missing or invalid MCP input_schema"],
+  "unsupported": [
+    "Phase 3D MCP fixture is bridge-generated and must be replaced by a sanitized Claude Code 2.1.205 golden capture before declaring external parity."
+  ]
+}
